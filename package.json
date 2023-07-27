@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "build": "turbo run build"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.9.7",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "^2.5.1",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.6.10",
+  "name": "turborepo-boilerplate",
+  "dependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3"
+  },
+  "lint-staged": {
+    "apps/**/*.{js,ts,jsx,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "packages/**/*.{js,ts,jsx,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  }
+}
