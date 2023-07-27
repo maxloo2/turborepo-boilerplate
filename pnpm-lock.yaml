@@ -33,6 +33,9 @@ importers:
 
   apps/client:
     dependencies:
+      modern-normalize:
+        specifier: ^2.0.0
+        version: 2.0.0
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -2441,6 +2444,11 @@ packages:
     dependencies:
       minimist: 1.2.8
     dev: true
+
+  /modern-normalize@2.0.0:
+    resolution: {integrity: sha512-CxBoEVKh5U4DH3XuNbc5ONLF6dQBc8dSc7pdZ1957FGbIO5JBqGqqchhET9dTexri8/pk9xBL6+5ceOtCIp1QA==}
+    engines: {node: '>=6'}
+    dev: false
 
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}

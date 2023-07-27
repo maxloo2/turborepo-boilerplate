@@ -1,3 +1,5 @@
+import 'modern-normalize';
+
 export default function RootLayout({
   children,
 }: {
