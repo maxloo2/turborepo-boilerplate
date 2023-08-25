@@ -1,7 +1,9 @@
+import TestComponent from '@components/TestComponent';
+
 const Root = () => {
   return (
     <>
-      <div>Hello World</div>
+      <TestComponent />
     </>
   );
 };
